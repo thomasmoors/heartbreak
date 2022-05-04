@@ -17,6 +17,18 @@ class PlayerCollection implements Countable, IteratorAggregate, ArrayAccess
 
     private array $players = [];
 
+    public function __construct(array $names)
+    {
+        foreach ($names as $name) {
+            $this->add(new Player($name));
+        }
+    }
+
+    public function add(Player $player): void
+    {
+        $this->players[] = $player;
+    }
+
     public function count(): int
     {
         return count($this->players);
@@ -25,11 +37,6 @@ class PlayerCollection implements Countable, IteratorAggregate, ArrayAccess
     public function getIterator(): Traversable
     {
         return new ArrayIterator($this->players);
-    }
-
-    public function add(Player $player): void
-    {
-        $this->players[] = $player;
     }
 
     public function offsetExists(mixed $offset): bool
@@ -61,6 +68,11 @@ class PlayerCollection implements Countable, IteratorAggregate, ArrayAccess
         return $this->players[array_rand($this->players)];
     }
 
+    public function hasLoser(): bool
+    {
+        return $this->loser() instanceof Player;
+    }
+
     public function loser(): ?Player
     {
         foreach ($this->players as $player) {
@@ -72,25 +84,13 @@ class PlayerCollection implements Countable, IteratorAggregate, ArrayAccess
         return null;
     }
 
-    public function hasLoser(): bool
-    {
-        return $this->loser() instanceof Player;
-    }
-
-    public function implode(string $separator = ''): string
-    {
-        return implode($separator, $this->players);
-    }
-
     public function __toString(): string
     {
         return $this->implode(', ');
     }
 
-    public function __construct(array $names)
+    public function implode(string $separator = ''): string
     {
-        foreach ($names as $name) {
-            $this->add(new Player($name));
-        }
+        return implode($separator, $this->players);
     }
 }

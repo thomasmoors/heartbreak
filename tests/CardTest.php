@@ -1,7 +1,6 @@
 <?php
 
 
-use LenderSpender\BusinessObjects\Card;
 use LenderSpender\BusinessObjects\Deck;
 use PHPUnit\Framework\TestCase;
 

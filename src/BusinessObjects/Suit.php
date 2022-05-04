@@ -2,7 +2,7 @@
 
 namespace LenderSpender\BusinessObjects;
 
-enum Suit : string
+enum Suit: string
 {
     case Hearts = '♥';
     case Diamonds = '♦';

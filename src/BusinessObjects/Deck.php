@@ -20,6 +20,15 @@ class Deck extends CardCollection
         }
     }
 
+    public function dealHand(int $amountOfCards): Hand
+    {
+        if ($this->empty()) {
+            $this->fill();
+        }
+
+        return new Hand(...array_splice($this->cards, 0, $amountOfCards));
+    }
+
     public function fill()
     {
         foreach (Suit::cases() as $suit) {
@@ -29,14 +38,5 @@ class Deck extends CardCollection
         }
 
         $this->shuffle();
-    }
-
-    public function dealHand(int $amountOfCards): Hand
-    {
-        if ($this->empty()) {
-            $this->fill();
-        }
-
-        return new Hand(...array_splice($this->cards, 0, $amountOfCards));
     }
 }

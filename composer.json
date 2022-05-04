@@ -1,6 +1,8 @@
 {
   "autoload": {
-    "psr-4": {"LenderSpender\\": "src/"}
+    "psr-4": {
+      "LenderSpender\\": "src/"
+    }
   },
   "require-dev": {
     "phpunit/phpunit": "^9.5"

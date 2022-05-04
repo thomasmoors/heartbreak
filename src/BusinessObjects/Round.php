@@ -13,6 +13,4 @@ class Round
         $this->game = $game;
         echo "Round {$roundIndex}: {$startingPlayer->name} starts the game" . PHP_EOL;
     }
-
-
 }

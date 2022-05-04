@@ -5,12 +5,11 @@ namespace LenderSpender\BusinessObjects;
 class Card
 {
 
+    public const MIN_VALUE = 7;
+    public const MAX_VALUE = 14;
     public Suit $suit;
     public int $value;
     public int $points = 0;
-
-    public const MIN_VALUE = 7;
-    public const MAX_VALUE = 14;
 
     public function __construct(Suit $suit, int $value)
     {
@@ -30,6 +29,11 @@ class Card
         }
     }
 
+    public function __toString(): string
+    {
+        return "{$this->suit->value}{$this->valueToName()}";
+    }
+
     public function valueToName()
     {
         switch ($this->value) {
@@ -44,11 +48,6 @@ class Card
             default:
                 return $this->value;
         }
-    }
-
-    public function __toString(): string
-    {
-        return "{$this->suit->value}{$this->valueToName()}";
     }
 
 }

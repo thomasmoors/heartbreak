@@ -6,8 +6,8 @@ use ArrayIterator;
 use Countable;
 use IteratorAggregate;
 use Traversable;
+use function \count;
 use function shuffle;
-use function \empty;
 
 class CardCollection implements Countable, IteratorAggregate
 {
