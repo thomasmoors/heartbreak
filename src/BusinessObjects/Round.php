@@ -2,6 +2,8 @@
 
 namespace LenderSpender\BusinessObjects;
 
+use LenderSpender\Helpers\Str;
+
 class Round
 {
     public Player $startingPlayer;
@@ -11,6 +13,6 @@ class Round
     {
         $this->startingPlayer = $startingPlayer;
         $this->game = $game;
-        echo "Round {$roundIndex}: {$startingPlayer->name} starts the game" . PHP_EOL;
+        Str::printLn("Round {$roundIndex}: {$startingPlayer->name} starts the game");
     }
 }

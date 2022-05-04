@@ -2,6 +2,8 @@
 
 namespace LenderSpender\BusinessObjects;
 
+use LenderSpender\Helpers\Str;
+
 class Player
 {
     public string $name;
@@ -27,7 +29,7 @@ class Player
     public function playCard(): void
     {
         if ($this->handEmpty()) {
-            echo 'Players ran out of cards. Reshuffle.' . PHP_EOL;
+            Str::printLn('Players ran out of cards. Reshuffle.');
 
         }
     }

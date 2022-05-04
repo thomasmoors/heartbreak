@@ -3,6 +3,7 @@
 namespace LenderSpender\BusinessObjects;
 
 use LenderSpender\Collections\PlayerCollection;
+use LenderSpender\Helpers\Str;
 
 class Game
 {
@@ -15,7 +16,7 @@ class Game
 
         $this->players = new PlayerCollection(['John', 'Jane', 'Jan', 'Otto']);
 
-        echo "Starting a game with {$this->players}" . PHP_EOL;
+        Str::printLn("Starting a game with {$this->players}");
 
         $this->deck = new Deck();
         $this->deck->dealCardsTo($this->players);

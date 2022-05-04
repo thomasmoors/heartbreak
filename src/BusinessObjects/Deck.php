@@ -4,6 +4,7 @@ namespace LenderSpender\BusinessObjects;
 
 use LenderSpender\Collections\CardCollection;
 use LenderSpender\Collections\PlayerCollection;
+use LenderSpender\Helpers\Str;
 
 class Deck extends CardCollection
 {
@@ -16,7 +17,7 @@ class Deck extends CardCollection
         foreach ($players as $player) {
             $player->receiveHand($this->dealHand($handSize));
 
-            echo "{$player->name} has been dealt: {$player->hand}" . PHP_EOL;
+            Str::printLn("{$player->name} has been dealt: {$player->hand}");
         }
     }
 
