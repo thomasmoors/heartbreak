@@ -11,6 +11,6 @@ class CardTest extends TestCase
     public function testHas32Cards(): void
     {
         $deck = new Deck();
-        $this->assertCount(32, $deck->cards);
+        $this->assertCount(32, $deck);
     }
 }

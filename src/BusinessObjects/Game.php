@@ -2,25 +2,29 @@
 
 namespace LenderSpender\BusinessObjects;
 
+use LenderSpender\Collections\PlayerCollection;
+
 class Game
 {
-    public $players = [];
+    public PlayerCollection $players;
 
     public function __construct()
     {
+        $roundIndex = 1;
 
+        $this->players = new PlayerCollection();
 
         foreach (['John', 'Jane', 'Jan', 'Otto'] as $name) {
-            $this->players[] = new Player($name);
+            $this->players->add(new Player($name));
         }
 
-        $loser = false;
+        $playerNames = $this->players->implode(', ');
+        echo "Starting a game with {$playerNames}" . PHP_EOL;
 
-        while (!$loser) {
-            $startingPlayer = $this->players[array_rand($this->players)];
-            echo "{$startingPlayer->name} starts this round" . PHP_EOL;
-            new Round($startingPlayer, $this);
-            $loser = Score::hasLoser($this->players);
+        while (!$this->players->hasLoser()) {
+            $startingPlayer = $this->players->getRandom();
+            new Round($startingPlayer, $roundIndex, $this);
+            $roundIndex++;
         }
     }
 }

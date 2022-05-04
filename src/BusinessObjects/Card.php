@@ -34,13 +34,13 @@ class Card
     {
         switch ($this->value) {
             case 11:
-                return 'Jack';
+                return 'J';
             case 12:
-                return 'Queen';
+                return 'Q';
             case 13:
-                return 'King';
+                return 'K';
             case 14:
-                return 'Ace';
+                return 'A';
             default:
                 return $this->value;
         }
