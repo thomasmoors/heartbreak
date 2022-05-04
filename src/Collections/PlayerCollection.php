@@ -81,4 +81,16 @@ class PlayerCollection implements Countable, IteratorAggregate, ArrayAccess
     {
         return implode($separator, $this->players);
     }
+
+    public function __toString(): string
+    {
+        return $this->implode(', ');
+    }
+
+    public function __construct(array $names)
+    {
+        foreach ($names as $name) {
+            $this->add(new Player($name));
+        }
+    }
 }

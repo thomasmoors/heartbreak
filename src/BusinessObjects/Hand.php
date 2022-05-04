@@ -2,14 +2,9 @@
 
 namespace LenderSpender\BusinessObjects;
 
-/*
- * TODO
- * Hand does not truly extend Deck, however in this case it does make things more compact
- * Both are a collection of cards
- * Consider to remove this extension
- */
+use LenderSpender\Collections\CardCollection;
 
-class Hand extends Deck
+class Hand extends CardCollection
 {
     public function __construct(Card ...$cards)
     {

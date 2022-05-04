@@ -2,20 +2,22 @@
 
 namespace LenderSpender\BusinessObjects;
 
-use ArrayIterator;
-use Countable;
-use IteratorAggregate;
-use Traversable;
-use function shuffle;
-use function \empty;
+use LenderSpender\Collections\CardCollection;
+use LenderSpender\Collections\PlayerCollection;
 
-class Deck implements Countable, IteratorAggregate
+class Deck extends CardCollection
 {
-    public array $cards = [];
-
-    public function __construct()
+    public function dealCardsTo(PlayerCollection $players)
     {
-        $this->fill();
+        // This can be a const, but only if the number of players is always the same
+        $handSize = $this->count() / $players->count();
+
+        /** @var Player $player */
+        foreach ($players as $player) {
+            $player->receiveHand($this->dealHand($handSize));
+
+            echo "{$player->name} has been dealt: {$player->hand}" . PHP_EOL;
+        }
     }
 
     public function fill()
@@ -29,21 +31,6 @@ class Deck implements Countable, IteratorAggregate
         $this->shuffle();
     }
 
-    public function shuffle()
-    {
-        shuffle($this->cards);
-    }
-
-    public function count(): int
-    {
-        return count($this->cards);
-    }
-
-    public function getIterator(): Traversable
-    {
-        return new ArrayIterator($this->cards);
-    }
-
     public function dealHand(int $amountOfCards): Hand
     {
         if ($this->empty()) {
@@ -51,15 +38,5 @@ class Deck implements Countable, IteratorAggregate
         }
 
         return new Hand(...array_splice($this->cards, 0, $amountOfCards));
-    }
-
-    public function empty(): bool
-    {
-        return empty($this->cards);
-    }
-
-    public function __toString(): string
-    {
-        return implode(', ', $this->cards);
     }
 }

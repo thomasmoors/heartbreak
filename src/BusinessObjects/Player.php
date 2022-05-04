@@ -23,4 +23,17 @@ class Player
     {
         return $this->name;
     }
+
+    public function playCard(): void
+    {
+        if ($this->handEmpty()) {
+            echo 'Players ran out of cards. Reshuffle.' . PHP_EOL;
+
+        }
+    }
+
+    public function handEmpty(): bool
+    {
+        return $this->hand->empty();
+    }
 }
