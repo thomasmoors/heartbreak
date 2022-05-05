@@ -6,11 +6,16 @@ All instructions are intended to be run from the root of this repository
 
 # run
 
+### local
 `php src/start.php`
 
-To redirect the output to a file
+### to redirect the output to a file
 
 `php src/start.php > output.txt`
+
+### docker
+
+`docker build -t heartbreak . && docker run -it heartbreak`
 
 # test
 
