@@ -10,6 +10,9 @@ class Deck extends CardCollection
 {
     public function dealCardsTo(PlayerCollection $players)
     {
+        if ($this->empty()) {
+            $this->fill();
+        }
         // This can be a const, but only if the number of players is always the same
         $handSize = $this->count() / $players->count();
 
@@ -23,10 +26,6 @@ class Deck extends CardCollection
 
     public function dealHand(int $amountOfCards): Hand
     {
-        if ($this->empty()) {
-            $this->fill();
-        }
-
         return new Hand(...array_splice($this->cards, 0, $amountOfCards));
     }
 

@@ -2,6 +2,7 @@
 
 namespace LenderSpender\BusinessObjects;
 
+use LenderSpender\Collections\MoveCollection;
 use LenderSpender\Helpers\Str;
 
 class Player
@@ -9,10 +10,12 @@ class Player
     public string $name;
     public Score $score;
     public Hand $hand;
+    public Game $game;
 
-    public function __construct($name)
+    public function __construct($name, Game $game)
     {
         $this->name = $name;
+        $this->game = $game;
         $this->score = new Score();
     }
 
@@ -26,16 +29,27 @@ class Player
         return $this->name;
     }
 
-    public function playCard(): void
+    public function playCard(MoveCollection $moves): void
     {
-        if ($this->handEmpty()) {
+        if ($this->hand->empty()) {
             Str::printLn('Players ran out of cards. Reshuffle.');
-
+            $this->askForNewCards();
         }
+
+        if (!$moves->empty()) {
+            $card = $this->hand->bestMatch($moves->first()->card);
+        } else {
+            $card = $this->hand->getRandom();
+        }
+
+        $moves->add(new Move($card, $this));
+
+        Str::printLn("{$this->name} plays: {$card}");
+        $this->hand->remove($card);
     }
 
-    public function handEmpty(): bool
+    public function askForNewCards(): void
     {
-        return $this->hand->empty();
+        $this->game->dealCards();
     }
 }

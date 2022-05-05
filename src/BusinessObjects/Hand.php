@@ -6,8 +6,19 @@ use LenderSpender\Collections\CardCollection;
 
 class Hand extends CardCollection
 {
-    public function __construct(Card ...$cards)
+    public function getRandom(): Card
     {
-        $this->cards = $cards;
+        return $this->cards[array_rand($this->cards)];
+    }
+
+    public function bestMatch(Card $initial): Card
+    {
+        $cardsOfSameSuit = $this->sameSuit($initial->suit);
+
+        if ($cardsOfSameSuit->empty()) {
+            return $this->getRandom();
+        }
+
+        return $cardsOfSameSuit->lowest();
     }
 }

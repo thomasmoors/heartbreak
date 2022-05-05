@@ -5,7 +5,9 @@ namespace LenderSpender\Collections;
 use ArrayAccess;
 use ArrayIterator;
 use Countable;
+use Exception;
 use IteratorAggregate;
+use LenderSpender\BusinessObjects\Game;
 use LenderSpender\BusinessObjects\Player;
 use LenderSpender\BusinessObjects\Score;
 use Traversable;
@@ -17,10 +19,10 @@ class PlayerCollection implements Countable, IteratorAggregate, ArrayAccess
 
     private array $players = [];
 
-    public function __construct(array $names)
+    public function __construct(array $names, Game $game)
     {
         foreach ($names as $name) {
-            $this->add(new Player($name));
+            $this->add(new Player($name, $game));
         }
     }
 
@@ -92,5 +94,32 @@ class PlayerCollection implements Countable, IteratorAggregate, ArrayAccess
     public function implode(string $separator = ''): string
     {
         return implode($separator, $this->players);
+    }
+
+    public function next(Player $current): Player
+    {
+        $index = array_search($current, $this->players);
+
+        if ($index === false) {
+            throw new Exception('Player does not exist');
+        }
+
+        $next = $index + 1;
+
+        if ($this->offsetExists($next)) {
+            return $this->players[$next];
+        }
+
+        return $this->players[0];
+    }
+
+    public function forEach(Player $start, callable $function): void
+    {
+        $current = $start;
+
+        do {
+            call_user_func($function, $current);
+            $current = $this->next($current);
+        } while ($current !== $start);
     }
 }

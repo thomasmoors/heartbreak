@@ -12,20 +12,35 @@ class Game
 
     public function __construct()
     {
+        #region setup
         $roundIndex = 1;
 
-        $this->players = new PlayerCollection(['John', 'Jane', 'Jan', 'Otto']);
+        $this->players = new PlayerCollection(['John', 'Jane', 'Jan', 'Otto'], $this);
 
         Str::printLn("Starting a game with {$this->players}");
 
-        $this->deck = new Deck();
-        $this->deck->dealCardsTo($this->players);
+        $this->dealCards();
+
+        $startingPlayer = $this->players->getRandom();
+        #endregion
 
         while (!$this->players->hasLoser()) {
-            $startingPlayer = $this->players->getRandom();
-            new Round($startingPlayer, $roundIndex, $this);
+
+            $round = new Round($startingPlayer, $roundIndex, $this);
+            $startingPlayer = $this->players->next($startingPlayer);
+
             $roundIndex++;
-            die;
+
+            if ($roundIndex == 8) {
+                die;
+
+            }
         }
+    }
+
+    public function dealCards(): void
+    {
+        $this->deck = new Deck();
+        $this->deck->dealCardsTo($this->players);
     }
 }
