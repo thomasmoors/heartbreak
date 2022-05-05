@@ -8,6 +8,11 @@ use LenderSpender\Helpers\Str;
 
 class Deck extends CardCollection
 {
+    public function __construct()
+    {
+        $this->fill();
+    }
+
     public function dealCardsTo(PlayerCollection $players)
     {
         if ($this->empty()) {
