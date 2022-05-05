@@ -36,7 +36,5 @@ class Deck extends CardCollection
                 $this->cards[] = new Card($suit, $i);
             }
         }
-
-        $this->shuffle();
     }
 }

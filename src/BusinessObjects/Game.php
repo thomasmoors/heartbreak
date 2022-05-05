@@ -19,6 +19,7 @@ class Game
 
         Str::printLn("Starting a game with {$this->players}");
 
+        $this->deck = new Deck();
         $this->dealCards();
 
         $startingPlayer = $this->players->getRandom();
@@ -31,7 +32,7 @@ class Game
 
             $roundIndex++;
 
-            if ($roundIndex == 8) {
+            if ($roundIndex == 10) {
                 die;
 
             }
@@ -40,7 +41,7 @@ class Game
 
     public function dealCards(): void
     {
-        $this->deck = new Deck();
+        $this->deck->shuffle();
         $this->deck->dealCardsTo($this->players);
     }
 }
