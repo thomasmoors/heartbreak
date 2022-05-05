@@ -37,7 +37,7 @@ class Deck extends CardCollection
     public function fill()
     {
         foreach (Suit::cases() as $suit) {
-            for ($i = CARD::MIN_VALUE; $i < CARD::MAX_VALUE + 1; $i++) {
+            for ($i = Card::MIN_VALUE; $i < Card::MAX_VALUE + 1; $i++) {
                 $this->cards[] = new Card($suit, $i);
             }
         }
