@@ -9,6 +9,7 @@ class Game
 {
     public PlayerCollection $players;
     public Deck $deck;
+    public array $rounds = [];
 
     public function __construct()
     {
@@ -27,12 +28,12 @@ class Game
 
         while (!$this->players->hasLoser()) {
 
-            $round = new Round($startingPlayer, $roundIndex, $this);
+            $this->rounds[] = new Round($startingPlayer, $roundIndex, $this);
             $startingPlayer = $this->players->next($startingPlayer);
 
             $roundIndex++;
 
-            if ($roundIndex == 10) {
+            if ($roundIndex == 2) {
                 die;
 
             }
