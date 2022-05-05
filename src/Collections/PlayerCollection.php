@@ -7,7 +7,6 @@ use ArrayIterator;
 use Countable;
 use Exception;
 use IteratorAggregate;
-use LenderSpender\BusinessObjects\Game;
 use LenderSpender\BusinessObjects\Player;
 use LenderSpender\BusinessObjects\Score;
 use Traversable;
@@ -19,10 +18,10 @@ class PlayerCollection implements Countable, IteratorAggregate, ArrayAccess
 
     private array $players = [];
 
-    public function __construct(array $names, Game $game)
+    public function __construct(string ...$names)
     {
         foreach ($names as $name) {
-            $this->add(new Player($name, $game));
+            $this->add(new Player($name));
         }
     }
 

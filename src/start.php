@@ -5,4 +5,4 @@ use LenderSpender\BusinessObjects\Game;
 
 require_once 'vendor/autoload.php';
 
-new Game();
+Game::instance()->setup();

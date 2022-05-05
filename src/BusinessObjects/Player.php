@@ -10,12 +10,10 @@ class Player
     public string $name;
     public Score $score;
     public Hand $hand;
-    public Game $game;
 
-    public function __construct($name, Game $game)
+    public function __construct($name)
     {
         $this->name = $name;
-        $this->game = $game;
         $this->score = new Score();
     }
 
@@ -50,6 +48,6 @@ class Player
 
     public function askForNewCards(): void
     {
-        $this->game->dealCards();
+        Game::instance()->dealCards();
     }
 }

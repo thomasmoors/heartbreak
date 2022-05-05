@@ -9,18 +9,16 @@ use LenderSpender\Helpers\Str;
 class Round
 {
     public Player $startingPlayer;
-    public Game $game;
     public MoveCollection $moves;
 
-    public function __construct(Player $startingPlayer, int $roundIndex, Game $game)
+    public function __construct(Player $startingPlayer, int $roundIndex)
     {
         $this->startingPlayer = $startingPlayer;
-        $this->game = $game;
         $this->moves = new MoveCollection();
 
         Str::printLn("Round {$roundIndex}: {$startingPlayer->name} starts the game");
 
-        $this->game->players->forEach($this->startingPlayer, function (Player $player) {
+        Game::instance()->players->forEach($this->startingPlayer, function (Player $player) {
             $player->playCard($this->moves);
         });
     }

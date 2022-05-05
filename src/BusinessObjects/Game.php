@@ -7,16 +7,22 @@ use LenderSpender\Helpers\Str;
 
 class Game
 {
+    private static ?Game $instance = null;
     public PlayerCollection $players;
     public Deck $deck;
     public array $rounds = [];
 
-    public function __construct()
+    private function __construct()
+    {
+
+    }
+
+    public function setup(): void
     {
         #region setup
         $roundIndex = 1;
 
-        $this->players = new PlayerCollection(['John', 'Jane', 'Jan', 'Otto'], $this);
+        $this->players = new PlayerCollection('John', 'Jane', 'Jan', 'Otto');
 
         Str::printLn("Starting a game with {$this->players}");
 
@@ -28,16 +34,25 @@ class Game
 
         while (!$this->players->hasLoser()) {
 
-            $this->rounds[] = new Round($startingPlayer, $roundIndex, $this);
+            $this->rounds[] = new Round($startingPlayer, $roundIndex);
             $startingPlayer = $this->players->next($startingPlayer);
 
             $roundIndex++;
 
-            if ($roundIndex == 2) {
+            if ($roundIndex == 5) {
                 die;
 
             }
         }
+    }
+
+    public static function instance(): self
+    {
+        if (self::$instance === null) {
+            self::$instance = new self();
+        }
+
+        return self::$instance;
     }
 
     public function dealCards(): void
