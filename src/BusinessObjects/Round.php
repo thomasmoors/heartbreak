@@ -2,7 +2,6 @@
 
 namespace LenderSpender\BusinessObjects;
 
-use Exception;
 use LenderSpender\Collections\MoveCollection;
 use LenderSpender\Helpers\Str;
 
@@ -18,12 +17,18 @@ class Round
 
         Str::printLn("Round {$roundIndex}: {$startingPlayer->name} starts the game");
 
-        Game::instance()->players->forEach($this->startingPlayer, function (Player $player) {
+        Game::instance()->players->forEach(function (Player $player) {
             $player->playCard($this->moves);
-        });
+        }, $this->startingPlayer);
     }
 
-    public function getLoser(): Player {
-        throw new Exception('Not implemented');
+    public function loser(): Player
+    {
+        return $this->moves->loser();
+    }
+
+    public function finished(): bool
+    {
+        return $this->moves->count() === Game::instance()->players->count();
     }
 }

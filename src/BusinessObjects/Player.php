@@ -37,7 +37,7 @@ class Player
         if (!$moves->empty()) {
             $card = $this->hand->bestMatch($moves->first()->card);
         } else {
-            $card = $this->hand->getRandom();
+            $card = $this->hand->random();
         }
 
         $moves->add(new Move($card, $this));

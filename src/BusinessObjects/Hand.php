@@ -6,7 +6,7 @@ use LenderSpender\Collections\CardCollection;
 
 class Hand extends CardCollection
 {
-    public function getRandom(): Card
+    public function random(): Card
     {
         return $this->cards[array_rand($this->cards)];
     }
@@ -16,7 +16,7 @@ class Hand extends CardCollection
         $cardsOfSameSuit = $this->sameSuit($initial->suit);
 
         if ($cardsOfSameSuit->empty()) {
-            return $this->getRandom();
+            return $this->random();
         }
 
         return $cardsOfSameSuit->lowest();

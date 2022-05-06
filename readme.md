@@ -44,7 +44,6 @@ Write an application that simulates a simplified heartbreak card game with four 
 - The application should be built without use of a framework. Of course you’re allowed to
   use composer and helper packages.
 - Main features should be tested with PHPunit.
-- When finished, share your GIT repository with development@lenderspender.com
 
 # Score
 

@@ -29,7 +29,7 @@ class Game
         $this->deck = new Deck();
         $this->dealCards();
 
-        $startingPlayer = $this->players->getRandom();
+        $startingPlayer = $this->players->random();
         #endregion
 
         while (!$this->players->hasLoser()) {

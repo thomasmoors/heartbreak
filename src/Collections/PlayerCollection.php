@@ -64,7 +64,7 @@ class PlayerCollection implements Countable, IteratorAggregate, ArrayAccess
         unset($this->players[$offset]);
     }
 
-    public function getRandom(): Player
+    public function random(): Player
     {
         return $this->players[array_rand($this->players)];
     }
@@ -112,9 +112,9 @@ class PlayerCollection implements Countable, IteratorAggregate, ArrayAccess
         return $this->players[0];
     }
 
-    public function forEach(Player $start, callable $function): void
+    public function forEach(callable $function, Player $start = null): void
     {
-        $current = $start;
+        $current = $start ?? $this->players[0];
 
         do {
             call_user_func($function, $current);
