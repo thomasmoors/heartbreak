@@ -3,11 +3,11 @@
 namespace Heartbreak\Collections;
 
 use ArrayIterator;
-use IteratorAggregate;
 use Heartbreak\BusinessObjects\Move;
 use Heartbreak\BusinessObjects\Player;
+use IteratorAggregate;
 use Traversable;
-use function \empty;
+use function count;
 
 class MoveCollection implements IteratorAggregate, \Countable
 {
@@ -33,13 +33,40 @@ class MoveCollection implements IteratorAggregate, \Countable
         return $this->moves[0] ?? null;
     }
 
+    public function moveWithHighestMatchingCard(): Move
+    {
+        /** @var Move $highest */
+        $highest = $this->moves[0];
+
+        /** @var Move $move */
+        foreach ($this->moves as $move) {
+            if ($move->card->suit === $highest->card->suit && $move->card->value > $highest->card->value) {
+                $highest = $move;
+            }
+        }
+
+        return $highest;
+    }
+
     public function loser(): Player
     {
-
+        return $this->moveWithHighestMatchingCard()->player;
     }
 
     public function count(): int
     {
         return count($this->moves);
+    }
+
+    public function points(): int
+    {
+        $points = 0;
+
+        /** @var Move $move */
+        foreach ($this->moves as $move) {
+            $points += $move->card->points;
+        }
+
+        return $points;
     }
 }

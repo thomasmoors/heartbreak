@@ -20,6 +20,8 @@ class Round
         Game::instance()->players->forEach(function (Player $player) {
             $player->playCard($this->moves);
         }, $this->startingPlayer);
+
+        $this->loser()->addPoints($this->moves->points());
     }
 
     public function loser(): Player

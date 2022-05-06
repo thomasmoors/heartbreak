@@ -50,4 +50,9 @@ class Player
     {
         Game::instance()->dealCards();
     }
+
+    public function addPoints(int $points): void
+    {
+        $this->score->addPoints($points);
+    }
 }
