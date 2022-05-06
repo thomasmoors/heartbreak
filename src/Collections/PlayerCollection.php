@@ -16,7 +16,7 @@ use function implode;
 class PlayerCollection implements Countable, IteratorAggregate, ArrayAccess
 {
 
-    private array $players = [];
+    protected array $players = [];
 
     public function __construct(string ...$names)
     {
@@ -38,11 +38,6 @@ class PlayerCollection implements Countable, IteratorAggregate, ArrayAccess
     public function getIterator(): Traversable
     {
         return new ArrayIterator($this->players);
-    }
-
-    public function offsetExists(mixed $offset): bool
-    {
-        return isset($this->players[$offset]);
     }
 
     public function offsetGet(mixed $offset): mixed
@@ -95,6 +90,16 @@ class PlayerCollection implements Countable, IteratorAggregate, ArrayAccess
         return implode($separator, $this->players);
     }
 
+    public function forEach(callable $function, Player $start = null): void
+    {
+        $current = $start ?? $this->players[0];
+
+        do {
+            call_user_func($function, $current);
+            $current = $this->next($current);
+        } while ($current !== $start);
+    }
+
     public function next(Player $current): Player
     {
         $index = array_search($current, $this->players);
@@ -112,13 +117,8 @@ class PlayerCollection implements Countable, IteratorAggregate, ArrayAccess
         return $this->players[0];
     }
 
-    public function forEach(callable $function, Player $start = null): void
+    public function offsetExists(mixed $offset): bool
     {
-        $current = $start ?? $this->players[0];
-
-        do {
-            call_user_func($function, $current);
-            $current = $this->next($current);
-        } while ($current !== $start);
+        return isset($this->players[$offset]);
     }
 }

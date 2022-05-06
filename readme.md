@@ -7,6 +7,7 @@ All instructions are intended to be run from the root of this repository
 # run
 
 ### local
+
 `php src/start.php`
 
 ### to redirect the output to a file

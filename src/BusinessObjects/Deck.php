@@ -13,7 +13,16 @@ class Deck extends CardCollection
         $this->fill();
     }
 
-    public function dealCardsTo(PlayerCollection $players)
+    public function fill(): void
+    {
+        foreach (Suit::cases() as $suit) {
+            for ($i = Card::MIN_VALUE; $i < Card::MAX_VALUE + 1; $i++) {
+                $this->cards[] = new Card($suit, $i);
+            }
+        }
+    }
+
+    public function dealCardsTo(PlayerCollection $players): void
     {
         if ($this->empty()) {
             $this->fill();
@@ -32,14 +41,5 @@ class Deck extends CardCollection
     public function dealHand(int $amountOfCards): Hand
     {
         return new Hand(...array_splice($this->cards, 0, $amountOfCards));
-    }
-
-    public function fill()
-    {
-        foreach (Suit::cases() as $suit) {
-            for ($i = Card::MIN_VALUE; $i < Card::MAX_VALUE + 1; $i++) {
-                $this->cards[] = new Card($suit, $i);
-            }
-        }
     }
 }

@@ -11,7 +11,7 @@ use function \empty;
 
 class MoveCollection implements IteratorAggregate, \Countable
 {
-    public array $moves = [];
+    protected array $moves = [];
 
     public function getIterator(): Traversable
     {
