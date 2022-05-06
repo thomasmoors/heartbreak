@@ -6,6 +6,7 @@ use ArrayAccess;
 use ArrayIterator;
 use Countable;
 use Exception;
+use Heartbreak\Helpers\Str;
 use IteratorAggregate;
 use Heartbreak\BusinessObjects\Player;
 use Heartbreak\BusinessObjects\Score;
@@ -73,11 +74,22 @@ class PlayerCollection implements Countable, IteratorAggregate, ArrayAccess
     {
         foreach ($this->players as $player) {
             if ($player->score->value >= Score::LOSING_SCORE) {
+                Str::printLn("{$player} loses the game!");
+                $this->printScore();
+
                 return $player;
             }
         }
 
         return null;
+    }
+
+    public function printScore(): void
+    {
+        /** @var Player $player */
+        foreach ($this->players as $player) {
+            $player->printScore();
+        }
     }
 
     public function __toString(): string

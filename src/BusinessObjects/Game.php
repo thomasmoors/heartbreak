@@ -47,11 +47,6 @@ class Game
             $startingPlayer = $this->players->next($startingPlayer);
 
             $roundIndex++;
-
-            if ($roundIndex == 5) {
-                die;
-
-            }
         }
     }
 

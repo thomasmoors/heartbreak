@@ -55,4 +55,9 @@ class Player
     {
         $this->score->addPoints($points);
     }
+
+    public function printScore(): void
+    {
+        Str::printLn("{$this->name}: {$this->score->value}");
+    }
 }
