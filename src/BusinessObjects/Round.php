@@ -21,7 +21,9 @@ class Round
             $player->playCard($this->moves);
         }, $this->startingPlayer);
 
-        $this->loser()->addPoints($this->moves->points());
+        if ($this->finished()) {
+            $this->loser()->addPoints($this->moves->points());
+        }
     }
 
     public function loser(): Player

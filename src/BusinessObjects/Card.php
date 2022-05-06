@@ -49,5 +49,4 @@ class Card
                 return strval($this->value);
         }
     }
-
 }
