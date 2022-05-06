@@ -34,7 +34,7 @@ class Card
         return "{$this->suit->value}{$this->valueToName()}";
     }
 
-    public function valueToName()
+    public function valueToName(): string
     {
         switch ($this->value) {
             case 11:
@@ -46,7 +46,7 @@ class Card
             case 14:
                 return 'A';
             default:
-                return $this->value;
+                return strval($this->value);
         }
     }
 
