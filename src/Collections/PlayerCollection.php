@@ -1,14 +1,14 @@
 <?php
 
-namespace LenderSpender\Collections;
+namespace Heartbreak\Collections;
 
 use ArrayAccess;
 use ArrayIterator;
 use Countable;
 use Exception;
 use IteratorAggregate;
-use LenderSpender\BusinessObjects\Player;
-use LenderSpender\BusinessObjects\Score;
+use Heartbreak\BusinessObjects\Player;
+use Heartbreak\BusinessObjects\Score;
 use Traversable;
 use TypeError;
 use function implode;

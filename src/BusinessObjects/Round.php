@@ -1,9 +1,9 @@
 <?php
 
-namespace LenderSpender\BusinessObjects;
+namespace Heartbreak\BusinessObjects;
 
-use LenderSpender\Collections\MoveCollection;
-use LenderSpender\Helpers\Str;
+use Heartbreak\Collections\MoveCollection;
+use Heartbreak\Helpers\Str;
 
 class Round
 {

@@ -1,7 +1,7 @@
 <?php
 
 
-use LenderSpender\BusinessObjects\Deck;
+use Heartbreak\BusinessObjects\Deck;
 use PHPUnit\Framework\TestCase;
 
 class CardTest extends TestCase

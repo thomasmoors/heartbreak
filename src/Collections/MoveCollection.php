@@ -1,11 +1,11 @@
 <?php
 
-namespace LenderSpender\Collections;
+namespace Heartbreak\Collections;
 
 use ArrayIterator;
 use IteratorAggregate;
-use LenderSpender\BusinessObjects\Move;
-use LenderSpender\BusinessObjects\Player;
+use Heartbreak\BusinessObjects\Move;
+use Heartbreak\BusinessObjects\Player;
 use Traversable;
 use function \empty;
 

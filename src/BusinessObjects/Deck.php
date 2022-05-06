@@ -1,10 +1,10 @@
 <?php
 
-namespace LenderSpender\BusinessObjects;
+namespace Heartbreak\BusinessObjects;
 
-use LenderSpender\Collections\CardCollection;
-use LenderSpender\Collections\PlayerCollection;
-use LenderSpender\Helpers\Str;
+use Heartbreak\Collections\CardCollection;
+use Heartbreak\Collections\PlayerCollection;
+use Heartbreak\Helpers\Str;
 
 class Deck extends CardCollection
 {

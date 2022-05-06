@@ -1,7 +1,7 @@
 <?php
 
 
-use LenderSpender\BusinessObjects\Game;
+use Heartbreak\BusinessObjects\Game;
 
 require_once 'vendor/autoload.php';
 

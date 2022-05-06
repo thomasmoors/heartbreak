@@ -1,6 +1,6 @@
 <?php
 
-namespace LenderSpender\Helpers;
+namespace Heartbreak\Helpers;
 
 class Str
 {

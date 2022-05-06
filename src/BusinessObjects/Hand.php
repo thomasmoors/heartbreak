@@ -1,8 +1,8 @@
 <?php
 
-namespace LenderSpender\BusinessObjects;
+namespace Heartbreak\BusinessObjects;
 
-use LenderSpender\Collections\CardCollection;
+use Heartbreak\Collections\CardCollection;
 
 class Hand extends CardCollection
 {

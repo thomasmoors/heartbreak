@@ -1,12 +1,12 @@
 <?php
 
-namespace LenderSpender\Collections;
+namespace Heartbreak\Collections;
 
 use ArrayIterator;
 use Countable;
 use IteratorAggregate;
-use LenderSpender\BusinessObjects\Card;
-use LenderSpender\BusinessObjects\Suit;
+use Heartbreak\BusinessObjects\Card;
+use Heartbreak\BusinessObjects\Suit;
 use Traversable;
 use function count;
 use function shuffle;

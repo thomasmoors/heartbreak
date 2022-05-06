@@ -1,9 +1,9 @@
 <?php
 
-namespace LenderSpender\BusinessObjects;
+namespace Heartbreak\BusinessObjects;
 
-use LenderSpender\Collections\PlayerCollection;
-use LenderSpender\Helpers\Str;
+use Heartbreak\Collections\PlayerCollection;
+use Heartbreak\Helpers\Str;
 
 class Game
 {
