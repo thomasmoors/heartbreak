@@ -26,6 +26,7 @@ class Deck extends CardCollection
     {
         if ($this->empty()) {
             $this->fill();
+            $this->shuffle();
         }
         // This can be a const, but only if the number of players is always the same
         $handSize = $this->count() / $players->count();
