@@ -16,9 +16,9 @@ class MoveCollectionTest extends TestCase
         $moves = new MoveCollection();
 
         $moves->add(new Move(new Card(Suit::Clubs, 9), new Player('A')));
-        $moves->add(new Move(new Card(Suit::Spades, 9), new Player('A')));
-        $moves->add(new Move(new Card(Suit::Clubs, 11), new Player('A')));
-        $highest = new Move(new Card(Suit::Clubs, 12), new Player('A'));
+        $moves->add(new Move(new Card(Suit::Spades, 9), new Player('B')));
+        $moves->add(new Move(new Card(Suit::Clubs, 11), new Player('C')));
+        $highest = new Move(new Card(Suit::Clubs, 12), new Player('D'));
         $moves->add($highest);
 
         $this->assertSame($moves->moveWithHighestMatchingCard(), $highest);
