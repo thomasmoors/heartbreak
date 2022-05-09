@@ -13,6 +13,14 @@ class Card
 
     public function __construct(Suit $suit, int $value)
     {
+        if ($value > self::MAX_VALUE) {
+            throw new \Exception('value is too high');
+        }
+
+        if ($value < self::MIN_VALUE) {
+            throw new \Exception('value is too low');
+        }
+
         $this->suit = $suit;
         $this->value = $value;
 
