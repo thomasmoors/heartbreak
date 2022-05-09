@@ -1,0 +1,680 @@
+Starting a game with John, Jane, Jan, Otto
+John has been dealt: ♥10, ♠7, ♦8, ♦Q, ♣8, ♦K, ♦9, ♣J
+Jane has been dealt: ♠A, ♦J, ♥K, ♣9, ♦7, ♠K, ♥Q, ♥A
+Jan has been dealt: ♣Q, ♥J, ♦A, ♥9, ♦10, ♠10, ♣K, ♣10
+Otto has been dealt: ♣A, ♠Q, ♠J, ♥7, ♣7, ♠9, ♥8, ♠8
+Round 1: Jan starts the game
+Jan plays: ♥J
+Otto plays: ♥7
+John plays: ♥10
+Jane plays: ♥Q
+Round 2: Otto starts the game
+Otto plays: ♠Q
+John plays: ♠7
+Jane plays: ♠K
+Jan plays: ♠10
+Round 3: John starts the game
+John plays: ♦9
+Jane plays: ♦7
+Jan plays: ♦10
+Otto plays: ♠8
+Round 4: Jane starts the game
+Jane plays: ♥A
+Jan plays: ♥9
+Otto plays: ♥8
+John plays: ♣J
+Round 5: Jan starts the game
+Jan plays: ♣10
+Otto plays: ♣7
+John plays: ♣8
+Jane plays: ♣9
+Round 6: Otto starts the game
+Otto plays: ♠J
+John plays: ♦Q
+Jane plays: ♠A
+Jan plays: ♣K
+Round 7: John starts the game
+John plays: ♦8
+Jane plays: ♦J
+Jan plays: ♦A
+Otto plays: ♠9
+Round 8: Jane starts the game
+Jane plays: ♥K
+Jan plays: ♣Q
+Otto plays: ♣A
+John plays: ♦K
+Round 9: Jan starts the game
+Players ran out of cards. Reshuffle.
+John has been dealt: ♥7, ♥8, ♥9, ♥10, ♥J, ♥Q, ♥K, ♥A
+Jane has been dealt: ♦7, ♦8, ♦9, ♦10, ♦J, ♦Q, ♦K, ♦A
+Jan has been dealt: ♣7, ♣8, ♣9, ♣10, ♣J, ♣Q, ♣K, ♣A
+Otto has been dealt: ♠7, ♠8, ♠9, ♠10, ♠J, ♠Q, ♠K, ♠A
+Jan plays: ♣9
+Otto plays: ♠A
+John plays: ♥Q
+Jane plays: ♦Q
+Round 10: Otto starts the game
+Otto plays: ♠8
+John plays: ♥J
+Jane plays: ♦K
+Jan plays: ♣A
+Round 11: John starts the game
+John plays: ♥A
+Jane plays: ♦A
+Jan plays: ♣7
+Otto plays: ♠10
+Round 12: Jane starts the game
+Jane plays: ♦10
+Jan plays: ♣8
+Otto plays: ♠7
+John plays: ♥10
+Round 13: Jan starts the game
+Jan plays: ♣10
+Otto plays: ♠9
+John plays: ♥9
+Jane plays: ♦8
+Round 14: Otto starts the game
+Otto plays: ♠Q
+John plays: ♥8
+Jane plays: ♦7
+Jan plays: ♣Q
+Round 15: John starts the game
+John plays: ♥7
+Jane plays: ♦9
+Jan plays: ♣J
+Otto plays: ♠J
+Round 16: Jane starts the game
+Jane plays: ♦J
+Jan plays: ♣K
+Otto plays: ♠K
+John plays: ♥K
+Round 17: Jan starts the game
+Players ran out of cards. Reshuffle.
+John has been dealt: ♥7, ♥8, ♥9, ♥10, ♥J, ♥Q, ♥K, ♥A
+Jane has been dealt: ♦7, ♦8, ♦9, ♦10, ♦J, ♦Q, ♦K, ♦A
+Jan has been dealt: ♣7, ♣8, ♣9, ♣10, ♣J, ♣Q, ♣K, ♣A
+Otto has been dealt: ♠7, ♠8, ♠9, ♠10, ♠J, ♠Q, ♠K, ♠A
+Jan plays: ♣9
+Otto plays: ♠7
+John plays: ♥7
+Jane plays: ♦8
+Round 18: Otto starts the game
+Otto plays: ♠9
+John plays: ♥10
+Jane plays: ♦J
+Jan plays: ♣J
+Round 19: John starts the game
+John plays: ♥A
+Jane plays: ♦9
+Jan plays: ♣8
+Otto plays: ♠K
+Round 20: Jane starts the game
+Jane plays: ♦A
+Jan plays: ♣A
+Otto plays: ♠Q
+John plays: ♥8
+Round 21: Jan starts the game
+Jan plays: ♣7
+Otto plays: ♠8
+John plays: ♥K
+Jane plays: ♦K
+Round 22: Otto starts the game
+Otto plays: ♠10
+John plays: ♥Q
+Jane plays: ♦Q
+Jan plays: ♣10
+Round 23: John starts the game
+John plays: ♥J
+Jane plays: ♦7
+Jan plays: ♣K
+Otto plays: ♠J
+Round 24: Jane starts the game
+Jane plays: ♦10
+Jan plays: ♣Q
+Otto plays: ♠A
+John plays: ♥9
+Round 25: Jan starts the game
+Players ran out of cards. Reshuffle.
+John has been dealt: ♥7, ♥8, ♥9, ♥10, ♥J, ♥Q, ♥K, ♥A
+Jane has been dealt: ♦7, ♦8, ♦9, ♦10, ♦J, ♦Q, ♦K, ♦A
+Jan has been dealt: ♣7, ♣8, ♣9, ♣10, ♣J, ♣Q, ♣K, ♣A
+Otto has been dealt: ♠7, ♠8, ♠9, ♠10, ♠J, ♠Q, ♠K, ♠A
+Jan plays: ♣J
+Otto plays: ♠9
+John plays: ♥J
+Jane plays: ♦A
+Round 26: Otto starts the game
+Otto plays: ♠A
+John plays: ♥7
+Jane plays: ♦7
+Jan plays: ♣A
+Round 27: John starts the game
+John plays: ♥Q
+Jane plays: ♦Q
+Jan plays: ♣8
+Otto plays: ♠J
+Round 28: Jane starts the game
+Jane plays: ♦K
+Jan plays: ♣9
+Otto plays: ♠Q
+John plays: ♥A
+Round 29: Jan starts the game
+Jan plays: ♣K
+Otto plays: ♠10
+John plays: ♥9
+Jane plays: ♦J
+Round 30: Otto starts the game
+Otto plays: ♠8
+John plays: ♥8
+Jane plays: ♦10
+Jan plays: ♣Q
+Round 31: John starts the game
+John plays: ♥K
+Jane plays: ♦8
+Jan plays: ♣10
+Otto plays: ♠7
+Round 32: Jane starts the game
+Jane plays: ♦9
+Jan plays: ♣7
+Otto plays: ♠K
+John plays: ♥10
+Round 33: Jan starts the game
+Players ran out of cards. Reshuffle.
+John has been dealt: ♥7, ♥8, ♥9, ♥10, ♥J, ♥Q, ♥K, ♥A
+Jane has been dealt: ♦7, ♦8, ♦9, ♦10, ♦J, ♦Q, ♦K, ♦A
+Jan has been dealt: ♣7, ♣8, ♣9, ♣10, ♣J, ♣Q, ♣K, ♣A
+Otto has been dealt: ♠7, ♠8, ♠9, ♠10, ♠J, ♠Q, ♠K, ♠A
+Jan plays: ♣10
+Otto plays: ♠A
+John plays: ♥7
+Jane plays: ♦Q
+Round 34: Otto starts the game
+Otto plays: ♠K
+John plays: ♥9
+Jane plays: ♦10
+Jan plays: ♣9
+Round 35: John starts the game
+John plays: ♥K
+Jane plays: ♦A
+Jan plays: ♣7
+Otto plays: ♠8
+Round 36: Jane starts the game
+Jane plays: ♦K
+Jan plays: ♣8
+Otto plays: ♠9
+John plays: ♥A
+Round 37: Jan starts the game
+Jan plays: ♣A
+Otto plays: ♠Q
+John plays: ♥8
+Jane plays: ♦8
+Round 38: Otto starts the game
+Otto plays: ♠10
+John plays: ♥10
+Jane plays: ♦J
+Jan plays: ♣Q
+Round 39: John starts the game
+John plays: ♥J
+Jane plays: ♦9
+Jan plays: ♣K
+Otto plays: ♠7
+Round 40: Jane starts the game
+Jane plays: ♦7
+Jan plays: ♣J
+Otto plays: ♠J
+John plays: ♥Q
+Round 41: Jan starts the game
+Players ran out of cards. Reshuffle.
+John has been dealt: ♥7, ♥8, ♥9, ♥10, ♥J, ♥Q, ♥K, ♥A
+Jane has been dealt: ♦7, ♦8, ♦9, ♦10, ♦J, ♦Q, ♦K, ♦A
+Jan has been dealt: ♣7, ♣8, ♣9, ♣10, ♣J, ♣Q, ♣K, ♣A
+Otto has been dealt: ♠7, ♠8, ♠9, ♠10, ♠J, ♠Q, ♠K, ♠A
+Jan plays: ♣J
+Otto plays: ♠8
+John plays: ♥9
+Jane plays: ♦9
+Round 42: Otto starts the game
+Otto plays: ♠7
+John plays: ♥K
+Jane plays: ♦Q
+Jan plays: ♣9
+Round 43: John starts the game
+John plays: ♥A
+Jane plays: ♦J
+Jan plays: ♣A
+Otto plays: ♠10
+Round 44: Jane starts the game
+Jane plays: ♦7
+Jan plays: ♣Q
+Otto plays: ♠Q
+John plays: ♥10
+Round 45: Jan starts the game
+Jan plays: ♣8
+Otto plays: ♠9
+John plays: ♥8
+Jane plays: ♦10
+Round 46: Otto starts the game
+Otto plays: ♠J
+John plays: ♥7
+Jane plays: ♦A
+Jan plays: ♣10
+Round 47: John starts the game
+John plays: ♥J
+Jane plays: ♦K
+Jan plays: ♣7
+Otto plays: ♠A
+Round 48: Jane starts the game
+Jane plays: ♦8
+Jan plays: ♣K
+Otto plays: ♠K
+John plays: ♥Q
+Round 49: Jan starts the game
+Players ran out of cards. Reshuffle.
+John has been dealt: ♥7, ♥8, ♥9, ♥10, ♥J, ♥Q, ♥K, ♥A
+Jane has been dealt: ♦7, ♦8, ♦9, ♦10, ♦J, ♦Q, ♦K, ♦A
+Jan has been dealt: ♣7, ♣8, ♣9, ♣10, ♣J, ♣Q, ♣K, ♣A
+Otto has been dealt: ♠7, ♠8, ♠9, ♠10, ♠J, ♠Q, ♠K, ♠A
+Jan plays: ♣9
+Otto plays: ♠J
+John plays: ♥7
+Jane plays: ♦8
+Round 50: Otto starts the game
+Otto plays: ♠9
+John plays: ♥A
+Jane plays: ♦Q
+Jan plays: ♣K
+Round 51: John starts the game
+John plays: ♥10
+Jane plays: ♦7
+Jan plays: ♣J
+Otto plays: ♠8
+Round 52: Jane starts the game
+Jane plays: ♦A
+Jan plays: ♣A
+Otto plays: ♠A
+John plays: ♥Q
+Round 53: Jan starts the game
+Jan plays: ♣Q
+Otto plays: ♠K
+John plays: ♥K
+Jane plays: ♦10
+Round 54: Otto starts the game
+Otto plays: ♠Q
+John plays: ♥8
+Jane plays: ♦J
+Jan plays: ♣7
+Round 55: John starts the game
+John plays: ♥9
+Jane plays: ♦K
+Jan plays: ♣10
+Otto plays: ♠10
+Round 56: Jane starts the game
+Jane plays: ♦9
+Jan plays: ♣8
+Otto plays: ♠7
+John plays: ♥J
+Round 57: Jan starts the game
+Players ran out of cards. Reshuffle.
+John has been dealt: ♥7, ♥8, ♥9, ♥10, ♥J, ♥Q, ♥K, ♥A
+Jane has been dealt: ♦7, ♦8, ♦9, ♦10, ♦J, ♦Q, ♦K, ♦A
+Jan has been dealt: ♣7, ♣8, ♣9, ♣10, ♣J, ♣Q, ♣K, ♣A
+Otto has been dealt: ♠7, ♠8, ♠9, ♠10, ♠J, ♠Q, ♠K, ♠A
+Jan plays: ♣J
+Otto plays: ♠9
+John plays: ♥K
+Jane plays: ♦7
+Round 58: Otto starts the game
+Otto plays: ♠7
+John plays: ♥9
+Jane plays: ♦9
+Jan plays: ♣A
+Round 59: John starts the game
+John plays: ♥10
+Jane plays: ♦J
+Jan plays: ♣Q
+Otto plays: ♠A
+Round 60: Jane starts the game
+Jane plays: ♦A
+Jan plays: ♣9
+Otto plays: ♠10
+John plays: ♥7
+Round 61: Jan starts the game
+Jan plays: ♣8
+Otto plays: ♠Q
+John plays: ♥8
+Jane plays: ♦10
+Round 62: Otto starts the game
+Otto plays: ♠8
+John plays: ♥J
+Jane plays: ♦8
+Jan plays: ♣K
+Round 63: John starts the game
+John plays: ♥Q
+Jane plays: ♦Q
+Jan plays: ♣10
+Otto plays: ♠J
+Round 64: Jane starts the game
+Jane plays: ♦K
+Jan plays: ♣7
+Otto plays: ♠K
+John plays: ♥A
+Round 65: Jan starts the game
+Players ran out of cards. Reshuffle.
+John has been dealt: ♥7, ♥8, ♥9, ♥10, ♥J, ♥Q, ♥K, ♥A
+Jane has been dealt: ♦7, ♦8, ♦9, ♦10, ♦J, ♦Q, ♦K, ♦A
+Jan has been dealt: ♣7, ♣8, ♣9, ♣10, ♣J, ♣Q, ♣K, ♣A
+Otto has been dealt: ♠7, ♠8, ♠9, ♠10, ♠J, ♠Q, ♠K, ♠A
+Jan plays: ♣9
+Otto plays: ♠Q
+John plays: ♥A
+Jane plays: ♦9
+Round 66: Otto starts the game
+Otto plays: ♠A
+John plays: ♥J
+Jane plays: ♦J
+Jan plays: ♣Q
+Round 67: John starts the game
+John plays: ♥10
+Jane plays: ♦10
+Jan plays: ♣10
+Otto plays: ♠8
+Round 68: Jane starts the game
+Jane plays: ♦A
+Jan plays: ♣A
+Otto plays: ♠J
+John plays: ♥9
+Round 69: Jan starts the game
+Jan plays: ♣K
+Otto plays: ♠K
+John plays: ♥K
+Jane plays: ♦K
+Round 70: Otto starts the game
+Otto plays: ♠9
+John plays: ♥8
+Jane plays: ♦Q
+Jan plays: ♣8
+Round 71: John starts the game
+John plays: ♥Q
+Jane plays: ♦7
+Jan plays: ♣J
+Otto plays: ♠7
+Round 72: Jane starts the game
+Jane plays: ♦8
+Jan plays: ♣7
+Otto plays: ♠10
+John plays: ♥7
+Round 73: Jan starts the game
+Players ran out of cards. Reshuffle.
+John has been dealt: ♥7, ♥8, ♥9, ♥10, ♥J, ♥Q, ♥K, ♥A
+Jane has been dealt: ♦7, ♦8, ♦9, ♦10, ♦J, ♦Q, ♦K, ♦A
+Jan has been dealt: ♣7, ♣8, ♣9, ♣10, ♣J, ♣Q, ♣K, ♣A
+Otto has been dealt: ♠7, ♠8, ♠9, ♠10, ♠J, ♠Q, ♠K, ♠A
+Jan plays: ♣9
+Otto plays: ♠J
+John plays: ♥10
+Jane plays: ♦10
+Round 74: Otto starts the game
+Otto plays: ♠K
+John plays: ♥7
+Jane plays: ♦9
+Jan plays: ♣Q
+Round 75: John starts the game
+John plays: ♥A
+Jane plays: ♦Q
+Jan plays: ♣K
+Otto plays: ♠10
+Round 76: Jane starts the game
+Jane plays: ♦K
+Jan plays: ♣8
+Otto plays: ♠8
+John plays: ♥9
+Round 77: Jan starts the game
+Jan plays: ♣10
+Otto plays: ♠Q
+John plays: ♥J
+Jane plays: ♦8
+Round 78: Otto starts the game
+Otto plays: ♠7
+John plays: ♥8
+Jane plays: ♦J
+Jan plays: ♣A
+Round 79: John starts the game
+John plays: ♥K
+Jane plays: ♦A
+Jan plays: ♣J
+Otto plays: ♠A
+Round 80: Jane starts the game
+Jane plays: ♦7
+Jan plays: ♣7
+Otto plays: ♠9
+John plays: ♥Q
+Round 81: Jan starts the game
+Players ran out of cards. Reshuffle.
+John has been dealt: ♥7, ♥8, ♥9, ♥10, ♥J, ♥Q, ♥K, ♥A
+Jane has been dealt: ♦7, ♦8, ♦9, ♦10, ♦J, ♦Q, ♦K, ♦A
+Jan has been dealt: ♣7, ♣8, ♣9, ♣10, ♣J, ♣Q, ♣K, ♣A
+Otto has been dealt: ♠7, ♠8, ♠9, ♠10, ♠J, ♠Q, ♠K, ♠A
+Jan plays: ♣8
+Otto plays: ♠8
+John plays: ♥J
+Jane plays: ♦10
+Round 82: Otto starts the game
+Otto plays: ♠10
+John plays: ♥10
+Jane plays: ♦A
+Jan plays: ♣A
+Round 83: John starts the game
+John plays: ♥8
+Jane plays: ♦9
+Jan plays: ♣7
+Otto plays: ♠9
+Round 84: Jane starts the game
+Jane plays: ♦Q
+Jan plays: ♣J
+Otto plays: ♠J
+John plays: ♥9
+Round 85: Jan starts the game
+Jan plays: ♣K
+Otto plays: ♠K
+John plays: ♥Q
+Jane plays: ♦K
+Round 86: Otto starts the game
+Otto plays: ♠A
+John plays: ♥7
+Jane plays: ♦8
+Jan plays: ♣Q
+Round 87: John starts the game
+John plays: ♥K
+Jane plays: ♦7
+Jan plays: ♣9
+Otto plays: ♠7
+Round 88: Jane starts the game
+Jane plays: ♦J
+Jan plays: ♣10
+Otto plays: ♠Q
+John plays: ♥A
+Round 89: Jan starts the game
+Players ran out of cards. Reshuffle.
+John has been dealt: ♥7, ♥8, ♥9, ♥10, ♥J, ♥Q, ♥K, ♥A
+Jane has been dealt: ♦7, ♦8, ♦9, ♦10, ♦J, ♦Q, ♦K, ♦A
+Jan has been dealt: ♣7, ♣8, ♣9, ♣10, ♣J, ♣Q, ♣K, ♣A
+Otto has been dealt: ♠7, ♠8, ♠9, ♠10, ♠J, ♠Q, ♠K, ♠A
+Jan plays: ♣K
+Otto plays: ♠A
+John plays: ♥8
+Jane plays: ♦K
+Round 90: Otto starts the game
+Otto plays: ♠7
+John plays: ♥7
+Jane plays: ♦J
+Jan plays: ♣J
+Round 91: John starts the game
+John plays: ♥Q
+Jane plays: ♦7
+Jan plays: ♣Q
+Otto plays: ♠8
+Round 92: Jane starts the game
+Jane plays: ♦Q
+Jan plays: ♣7
+Otto plays: ♠Q
+John plays: ♥K
+Round 93: Jan starts the game
+Jan plays: ♣8
+Otto plays: ♠10
+John plays: ♥9
+Jane plays: ♦8
+Round 94: Otto starts the game
+Otto plays: ♠K
+John plays: ♥10
+Jane plays: ♦10
+Jan plays: ♣A
+Round 95: John starts the game
+John plays: ♥J
+Jane plays: ♦9
+Jan plays: ♣10
+Otto plays: ♠J
+Round 96: Jane starts the game
+Jane plays: ♦A
+Jan plays: ♣9
+Otto plays: ♠9
+John plays: ♥A
+Round 97: Jan starts the game
+Players ran out of cards. Reshuffle.
+John has been dealt: ♥7, ♥8, ♥9, ♥10, ♥J, ♥Q, ♥K, ♥A
+Jane has been dealt: ♦7, ♦8, ♦9, ♦10, ♦J, ♦Q, ♦K, ♦A
+Jan has been dealt: ♣7, ♣8, ♣9, ♣10, ♣J, ♣Q, ♣K, ♣A
+Otto has been dealt: ♠7, ♠8, ♠9, ♠10, ♠J, ♠Q, ♠K, ♠A
+Jan plays: ♣8
+Otto plays: ♠K
+John plays: ♥J
+Jane plays: ♦8
+Round 98: Otto starts the game
+Otto plays: ♠10
+John plays: ♥A
+Jane plays: ♦J
+Jan plays: ♣10
+Round 99: John starts the game
+John plays: ♥Q
+Jane plays: ♦10
+Jan plays: ♣K
+Otto plays: ♠7
+Round 100: Jane starts the game
+Jane plays: ♦A
+Jan plays: ♣Q
+Otto plays: ♠A
+John plays: ♥10
+Round 101: Jan starts the game
+Jan plays: ♣J
+Otto plays: ♠Q
+John plays: ♥7
+Jane plays: ♦Q
+Round 102: Otto starts the game
+Otto plays: ♠9
+John plays: ♥K
+Jane plays: ♦7
+Jan plays: ♣A
+Round 103: John starts the game
+John plays: ♥8
+Jane plays: ♦9
+Jan plays: ♣9
+Otto plays: ♠J
+Round 104: Jane starts the game
+Jane plays: ♦K
+Jan plays: ♣7
+Otto plays: ♠8
+John plays: ♥9
+Round 105: Jan starts the game
+Players ran out of cards. Reshuffle.
+John has been dealt: ♥7, ♥8, ♥9, ♥10, ♥J, ♥Q, ♥K, ♥A
+Jane has been dealt: ♦7, ♦8, ♦9, ♦10, ♦J, ♦Q, ♦K, ♦A
+Jan has been dealt: ♣7, ♣8, ♣9, ♣10, ♣J, ♣Q, ♣K, ♣A
+Otto has been dealt: ♠7, ♠8, ♠9, ♠10, ♠J, ♠Q, ♠K, ♠A
+Jan plays: ♣10
+Otto plays: ♠9
+John plays: ♥A
+Jane plays: ♦A
+Round 106: Otto starts the game
+Otto plays: ♠K
+John plays: ♥9
+Jane plays: ♦7
+Jan plays: ♣9
+Round 107: John starts the game
+John plays: ♥8
+Jane plays: ♦9
+Jan plays: ♣Q
+Otto plays: ♠A
+Round 108: Jane starts the game
+Jane plays: ♦10
+Jan plays: ♣J
+Otto plays: ♠10
+John plays: ♥Q
+Round 109: Jan starts the game
+Jan plays: ♣8
+Otto plays: ♠Q
+John plays: ♥J
+Jane plays: ♦J
+Round 110: Otto starts the game
+Otto plays: ♠7
+John plays: ♥7
+Jane plays: ♦8
+Jan plays: ♣7
+Round 111: John starts the game
+John plays: ♥K
+Jane plays: ♦Q
+Jan plays: ♣K
+Otto plays: ♠J
+Round 112: Jane starts the game
+Jane plays: ♦K
+Jan plays: ♣A
+Otto plays: ♠8
+John plays: ♥10
+Round 113: Jan starts the game
+Players ran out of cards. Reshuffle.
+John has been dealt: ♥7, ♥8, ♥9, ♥10, ♥J, ♥Q, ♥K, ♥A
+Jane has been dealt: ♦7, ♦8, ♦9, ♦10, ♦J, ♦Q, ♦K, ♦A
+Jan has been dealt: ♣7, ♣8, ♣9, ♣10, ♣J, ♣Q, ♣K, ♣A
+Otto has been dealt: ♠7, ♠8, ♠9, ♠10, ♠J, ♠Q, ♠K, ♠A
+Jan plays: ♣J
+Otto plays: ♠9
+John plays: ♥9
+Jane plays: ♦8
+Round 114: Otto starts the game
+Otto plays: ♠8
+John plays: ♥A
+Jane plays: ♦7
+Jan plays: ♣Q
+Round 115: John starts the game
+John plays: ♥J
+Jane plays: ♦J
+Jan plays: ♣8
+Otto plays: ♠A
+Round 116: Jane starts the game
+Jane plays: ♦Q
+Jan plays: ♣10
+Otto plays: ♠7
+John plays: ♥10
+Round 117: Jan starts the game
+Jan plays: ♣A
+Otto plays: ♠J
+John plays: ♥7
+Jane plays: ♦9
+Round 118: Otto starts the game
+Otto plays: ♠K
+John plays: ♥8
+Jane plays: ♦A
+Jan plays: ♣K
+Round 119: John starts the game
+John plays: ♥Q
+Jane plays: ♦10
+Jan plays: ♣7
+Otto plays: ♠10
+Round 120: Jane starts the game
+Jane plays: ♦K
+Jan plays: ♣9
+Otto plays: ♠Q
+John plays: ♥K
+Jane loses the game!
+John: 36
+Jane: 51
+Jan: 44
+Otto: 34
