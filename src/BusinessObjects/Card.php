@@ -33,7 +33,7 @@ class Card
         }
 
         if ($suit === Suit::Spades && $value === 12) {
-            $this->points = 1;
+            $this->points = 5;
         }
     }
 
