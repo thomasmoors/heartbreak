@@ -4,7 +4,7 @@
 use Heartbreak\BusinessObjects\Deck;
 use PHPUnit\Framework\TestCase;
 
-class CardTest extends TestCase
+class DeckTest extends TestCase
 {
 
     public function testHas32Cards()
