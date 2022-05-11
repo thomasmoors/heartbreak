@@ -1,4 +1,4 @@
-All instructions are intended to be run from the root of this repository
+All instructions are intended to be ran from the root of this repository
 
 # initial setup
 
